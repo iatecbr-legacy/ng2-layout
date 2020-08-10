@@ -1,10 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+
+import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
+//import { IatecLayoutModule } from '../../projects/iatec-layout/src/lib/iatec-layout.module';
+import { IatecLayoutModule } from '@iatec/ng2-layout';
 
 import { AppComponent } from './app.component';
-import { IatecLayoutModule } from './iatec-layout/iatec-layout.module';
-import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -20,4 +22,6 @@ import { FormsModule } from '@angular/forms';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+
+ }
