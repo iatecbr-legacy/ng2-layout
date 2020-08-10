@@ -1,51 +1,58 @@
 {
-  "name": "ng2-layout",
-  "version": "0.0.0",
-  "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e",
-    "publish-lib": "ng run iatec-layout:build:production && @powershell copy ./projects/iatec-layout/.npmignore ./dist/iatec-layout/.npmignore && npm publish ./dist/iatec-layout"
-  },
-  "private": true,
-  "dependencies": {
-    "@angular/animations": "~10.0.5",
-    "@angular/common": "~10.0.5",
-    "@angular/compiler": "~10.0.5",
-    "@angular/core": "~10.0.5",
-    "@angular/forms": "~10.0.5",
-    "@angular/platform-browser": "~10.0.5",
-    "@angular/platform-browser-dynamic": "~10.0.5",
-    "@angular/router": "^10.0.8",
-    "@iatec/ng2-layout": "file:dist/iatec-layout/package",
-    "iatec-layout": "file:dist/iatec-layout/package",
-    "rxjs": "~6.5.5",
-    "tslib": "^2.0.0",
-    "zone.js": "~0.10.3"
-  },
-  "devDependencies": {
-    "@angular-devkit/build-angular": "~0.1000.4",
-    "@angular-devkit/build-ng-packagr": "~0.1000.5",
-    "@angular/cli": "~10.0.4",
-    "@angular/compiler-cli": "~10.0.5",
-    "@types/jasmine": "~3.5.0",
-    "@types/jasminewd2": "~2.0.3",
-    "@types/node": "^14.0.27",
-    "codelyzer": "^6.0.0",
-    "jasmine-core": "~3.5.0",
-    "jasmine-spec-reporter": "~5.0.0",
-    "karma": "~5.0.0",
-    "karma-chrome-launcher": "~3.1.0",
-    "karma-coverage-istanbul-reporter": "~3.0.2",
-    "karma-jasmine": "~3.3.0",
-    "karma-jasmine-html-reporter": "^1.5.0",
-    "ng-packagr": "^10.0.0",
-    "protractor": "~7.0.0",
-    "ts-node": "~8.3.0",
-    "tslint": "~6.1.0",
-    "typescript": "~3.9.5"
-  }
+    "name": "@iatec/ng2-layout",
+    "version": "0.0.46",
+    "license": "MIT",
+    "author": {
+        "name": "Flávio Silva",
+        "url": "http://flaviosilva.net"
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "scripts": {
+        "prepublish": "gulp js:build && ngc --p tsconfig-aot.json"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/iatecbr/ng2-layout.git"
+    },
+    "devDependencies": {
+        "@angular/animations": "^5.0.0",
+        "@angular/cli": "^7.2.3",
+        "@angular/common": "^5.0.0",
+        "@angular/compiler": "^5.0.0",
+        "@angular/compiler-cli": "^5.0.0",
+        "@angular/core": "^5.0.0",
+        "@angular/forms": "^5.0.0",
+        "@angular/http": "^5.0.0",
+        "@angular/language-service": "^5.0.0",
+        "@angular/platform-browser": "^5.0.0",
+        "@angular/platform-browser-dynamic": "^5.0.0",
+        "@angular/router": "^5.0.0",
+        "@types/jasmine": "~2.5.53",
+        "@types/jasminewd2": "~2.0.2",
+        "@types/node": "~6.0.60",
+        "codelyzer": "~3.1.1",
+        "core-js": "^2.4.1",
+        "grunt": "^1.0.2",
+        "grunt-bump": "^0.8.0",
+        "gulp": "^4.0.0",
+        "gulp-inline-ng2-template": "^4.0.0",
+        "jasmine-core": "~2.6.2",
+        "jasmine-spec-reporter": "~4.1.0",
+        "karma": "^4.0.0",
+        "karma-chrome-launcher": "~2.1.1",
+        "karma-cli": "~1.0.1",
+        "karma-coverage-istanbul-reporter": "^1.2.1",
+        "karma-jasmine": "~1.1.0",
+        "karma-jasmine-html-reporter": "^0.2.2",
+        "protractor": "^5.4.2",
+        "rxjs": "^5.4.2",
+        "ts-node": "~3.2.0",
+        "tslint": "~5.3.2",
+        "typescript": "~2.4.2",
+        "zone.js": "^0.8.14",
+        "es6-promise": "~4.2.6",
+        "es6-set": "^0.1.5"
+    }
 }
