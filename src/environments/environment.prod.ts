@@ -1,4 +1,3 @@
 export const environment = {
-  production: true,
-  packagePath: '../package.json'
+  production: true
 };
