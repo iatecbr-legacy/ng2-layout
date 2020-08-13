@@ -70,5 +70,3 @@ Thumbs.db
 *.ngfactory.js.map
 *.ngsummary.json
 
-#CI
-*/**/*.map
