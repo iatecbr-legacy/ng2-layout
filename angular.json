@@ -160,6 +160,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "ng2-layout"
+    }
+  },
+  "defaultProject": "ng2-layout",
+  "cli": {
+    "analytics": false
+  }
 }
