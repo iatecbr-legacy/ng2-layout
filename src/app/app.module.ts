@@ -16,7 +16,7 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     FormsModule,
-    RouterModule.forRoot([{ path: '', component: AppComponent }]),
+    RouterModule.forRoot([{ path: '', component: AppComponent }], { relativeLinkResolution: 'legacy' }),
     IatecLayoutModule
   ],
   providers: [],
