@@ -57,6 +57,7 @@ header aside .btn-menu:active {
 header aside.profile {
   font-size: 16px;
   text-align: right;
+  width: 420px;
 }
 
 header aside.profile .budget {
